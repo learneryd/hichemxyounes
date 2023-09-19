@@ -1,31 +1,22 @@
 // composants/Footer.js
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
-    return (
+  return (
     <footer>
- <div className="footer-content">
-        <div className="footer-logo">
-          <img src="/votre-logo.png" alt="Logo de l'entreprise" />
-          <h2>Nom de l'entreprise</h2>
-        </div>
-        <div className="footer-contact">
-          <p>Adresse : 123 Rue de l'Entreprise</p>
-          <p>Téléphone : (123) 456-7890</p>
-          <p>Email : contact@entreprise.com</p>
-        </div>
+      <div className="footer-content">
         <div className="footer-social">
-          <a href="#"><i className="fab fa-facebook"></i></a>
-          <a href="#"><i className="fab fa-twitter"></i></a>
-          <a href="#"><i className="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/hichem.ibm/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>
         </div>
       </div>
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} Nom de l'entreprise. Tous droits réservés.</p>
+        <a href="https://www.instagram.com/hichem.ibm/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>
       </div>
-
     </footer>
-    );
+  );
 }
 
 export default Footer;
