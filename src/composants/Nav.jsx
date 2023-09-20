@@ -9,9 +9,6 @@ function Navigation() {
         <li> <button> <a href="/page/inscription">S'inscrire</a> </button> </li>
         <li><button> Se connecter </button></li>
       </ul>
-
-      
-      
     </nav>
   );
 }

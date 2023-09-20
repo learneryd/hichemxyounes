@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../composants/footer';
 import Header from '../composants/Header';
-import Navigation from '../composants/nav';
+import Navigation from '../composants/Nav';
 
 function Inscription() {
   return (
