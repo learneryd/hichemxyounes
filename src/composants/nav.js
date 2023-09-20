@@ -6,7 +6,7 @@ function Navigation() {
         <li><a href="/">Accueil</a></li>
         <li><a href="/produits">Produits</a></li>
         <li><a href="/contact">Contact</a></li>
-        <li><button> S'inscrire </button></li>
+        <li> <button> <a href="/page/inscription">S'inscrire</a> </button> </li>
         <li><button> Se connecter </button></li>
       </ul>
 
