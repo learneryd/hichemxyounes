@@ -1,13 +1,9 @@
 import React from 'react';
-import Footer from '../composants/footer';
-import Header from '../composants/Header';
-import Navigation from '../composants/Nav';
 
 function Inscription() {
   return (
     <div className="inscription">
-      <Header />
-      <Navigation />
+
       <div className="inscription-content">
         <h2>Inscription</h2>
         <form>
@@ -26,7 +22,6 @@ function Inscription() {
           <button type="submit">S'inscrire</button>
         </form>
       </div>
-      <Footer />
     </div>
   );
 }
