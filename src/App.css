@@ -1,66 +1,90 @@
-header {
-  background-color: #333; /* Couleur de fond du header */
-  color: #fff; /* Couleur du texte */
-  padding: 20px; /* Espace intérieur du header */
-  display: flex;
-  justify-content: space-between; /* Aligner les éléments horizontalement */
-  align-items: center; /* Aligner les éléments verticalement */
-}
+/* Css pour le header */
 
-h1 {
-  margin: 0; /* Supprimer les marges par défaut */
-  font-size: 24px; /* Taille de police pour le titre */
+#H1{
+  text-align: center;
+  color: black;
+  background-color: grey;
+  padding: 30px;
+  
+}
+/* Css pour la navigation  */
+/* Styles pour la navigation */
+/* Styles pour la navigation */
+/* Styles pour la navigation */
+/* Styles pour la navigation */
+nav {
+  background-color: #333;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
 }
 
 ul {
-  list-style: none; /* Supprimer les puces de liste */
-  padding: 0; /* Supprimer le remplissage de la liste */
+  list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Définit la largeur de la liste à 100% */
 }
 
 li {
-  margin-right: 20px; /* Marge à droite entre les éléments de la liste */
+  margin-right: 350px;
 }
 
 a {
-  text-decoration: none; /* Supprimer la décoration de lien */
-  color: #fff; /* Couleur du texte des liens */
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-.user-info {
-  display: flex;
-  align-items: center;
+a:hover {
+  color: #ff9900;
 }
 
-img {
-  width: 40px; /* Largeur de l'image de profil */
-  height: 40px; /* Hauteur de l'image de profil */
-  border-radius: 50%; /* Rendre l'image de profil ronde */
-  margin-right: 10px; /* Marge à droite entre l'image et le texte */
-}
-
+/* Styles pour les boutons */
 button {
-  background-color: #ff0000; /* Couleur de fond du bouton de déconnexion */
-  color: #fff; /* Couleur du texte du bouton de déconnexion */
-  border: none; /* Supprimer la bordure du bouton */
-  padding: 5px 10px; /* Remplissage du bouton */
-  cursor: pointer; /* Curseur de souris pointeur pour indiquer le bouton cliquable */
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
 }
 
-/* Style pour le survol du bouton */
 button:hover {
-  background-color: #cc0000; /* Couleur de fond du bouton au survol */
+  background-color: #ff6600;
 }
 
-/*Code pour le footer
+/* Styles pour la section  */
+/* Section.css */
 
-/* composants/Footer.module.css */
+.intro-section {
+  background-color: grey; /* Couleur de fond de la section, vous pouvez la personnaliser */
+  padding: 300px; /* Espacement interne pour le contenu de la section */
+  text-align: center; /* Centre le contenu horizontalement */
+}
+
+.intro-section h2 {
+  font-size: 24px; /* Taille de la police pour le titre */
+  margin-bottom: 10px; /* Espacement en bas du titre */
+}
+
+.intro-section p {
+  font-size: 16px; /* Taille de la police pour le paragraphe */
+  margin-bottom: 20px; /* Espacement en bas du paragraphe */
+}
+/* Style pour le footer/*
+/* Footer.css */
 
 /* Style du conteneur du footer */
 .footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
+  background-color: #333; /* Couleur de fond du footer, vous pouvez la personnaliser */
+  color: #fff; /* Couleur du texte, vous pouvez la personnaliser */
+  padding: 20px 0; /* Espacement interne pour le contenu du footer */
 }
 
 /* Styles pour les éléments internes du footer */
@@ -74,7 +98,7 @@ button:hover {
 }
 
 .footer-logo img {
-  max-width: 100px;
+  max-width: 100px; /* Largeur maximale du logo, vous pouvez la personnaliser */
   height: auto;
 }
 
@@ -85,16 +109,15 @@ button:hover {
 .footer-social a {
   margin-right: 10px;
   color: #fff;
-  font-size: 20px;
+  font-size: 20px; /* Taille de la police pour les icônes sociales, vous pouvez la personnaliser */
 }
 
 /* Style pour le bas du footer */
 .footer-bottom {
   text-align: center;
-  background-color: grey;
-  padding: 10px 0;
+   /* Couleur de fond du bas du footer, vous pouvez la personnaliser */
+  padding: 10px 0; /* Espacement interne du bas du footer */
 }
-
 
 /* Style pour forcer le footer en bas de la page */
 .footer {
