@@ -20,7 +20,7 @@ function Navigation() {
                     </Link>
                 </li>
                 <li>
-                    <button>Se connecter</button>
+                    <Link to="/connexion">Se connecter</Link>
                 </li>
             </ul>
         </nav>

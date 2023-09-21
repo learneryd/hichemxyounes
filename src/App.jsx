@@ -9,9 +9,11 @@ import Header from "./composants/Header";
 import Navigation from "./composants/Navigation";
 import Footer from "./composants/Footer";
 
+
 // Pages
 import Home from "./page/Home";
 import Inscription from "./page/Inscription";
+import Connexion from "./page/Connexion";
 
 function App() {
     return (
@@ -21,6 +23,7 @@ function App() {
             <Routes>
                 <Route path="/" exact element={<Home />} />
                 <Route path="/inscription" element={<Inscription />} />
+                <Route path="/connexion" element={<Connexion />} />
                 <Route path="*" element={<Navigate to="/" />} />
             </Routes>
             <Footer />
