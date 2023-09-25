@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom'
 
-function Connexion() {
+function Connexion({ definirEstConnecte }) { // Passez la fonction definirEstConnecte comme prop
     const [email, setEmail] = useState('');
     const [motDePasse, setMotDePasse] = useState('');
     const [errorMessage, setErrorMessage] = useState(''); // Ajoutez un état pour le message d'erreur
+
+    // Utilisez useNavigate pour obtenir la fonction de navigation
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -16,6 +20,11 @@ function Connexion() {
             });
 
             console.log(response.data); // Afficher la réponse du serveur
+
+            // Définir l'état de connexion à true après une connexion réussie
+            definirEstConnecte(true);
+
+            navigate('/'); // Assurez-vous d'avoir cette fonction navigate définie
 
             // Rediriger vers la page d'accueil ou une autre page après la connexion réussie
             // Vous pouvez utiliser react-router-dom pour gérer la navigation ici

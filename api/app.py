@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, session
+from flask import Flask, request, jsonify, session, redirect
 import mysql.connector
 from flask_cors import CORS
 from flask_redis import FlaskRedis
@@ -82,11 +82,29 @@ def connexion():
             # L'utilisateur est authentifié, enregistrez son ID dans la session
             session['user_id'] = user['id']
 
+            # Enregistrez également un indicateur d'état de connexion dans la session
+            session['is_logged_in'] = True
+
             # Vous pouvez rediriger ou effectuer d'autres actions
             return jsonify({'message': 'Connecté avec succès !'})
         else:
             # L'authentification a échoué, renvoyez un message d'erreur
             return jsonify({'error': 'Échec de la connexion. Veuillez réessayer avec des informations d\'identification valides.'}), 401
+        
+
+@app.route('/deconnexion')
+def deconnexion():
+    # Supprimer l'indicateur de connexion de la session
+    session.pop('is_logged_in', None)
+    
+    # Vous pouvez également ajouter d'autres étapes de nettoyage de la session si nécessaire
+
+    # Redirigez l'utilisateur vers une page d'accueil ou une autre page après la déconnexion
+    return redirect('/')
+
+# Fonction pour vérifier si l'utilisateur est connecté
+def is_logged_in():
+    return session.get('is_logged_in', False)
 
 if __name__ == '__main__':
     app.run(debug=True)
