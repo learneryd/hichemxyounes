@@ -17,6 +17,10 @@ function Inscription() {
             });
 
             console.log(response.data); // Afficher la réponse du serveur
+            
+            setNom("");
+            setEmail("");
+            setMotDePasse("");
 
             // Rediriger vers une page de confirmation après inscription réussie si nécessaire
             // Vous pouvez utiliser react-router-dom pour gérer la navigation ici

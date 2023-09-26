@@ -8,7 +8,7 @@ function Footer() {
             <div className="footer-content">{/* Contenu du footer */}</div>
             <div className="footer-bottom">
                 <p>
-                    &copy; {new Date().getFullYear()} Nom de l'entreprise. Tous
+                    &copy; {new Date().getFullYear()} YHBusiness. Tous
                     droits réservés.
                 </p>
                 <a
